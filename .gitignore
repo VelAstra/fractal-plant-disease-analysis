@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+sample_data/*.png
+!sample_data/leaf_healthy.png
+!sample_data/leaf_bacterial_spot.png
+!sample_data/leaf_rust.png
