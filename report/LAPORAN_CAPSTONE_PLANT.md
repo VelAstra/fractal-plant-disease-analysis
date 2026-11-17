@@ -32,11 +32,9 @@ Deteksi dini penyakit tanaman sangat menentukan ketahanan pangan. Lesi akibat pa
 2. Bagaimana memadukan dimensi fraktal dan lakunaritas sebagai vektor fitur diskriminatif untuk klasifikasi penyakit daun?
 3. Bagaimana merancang antarmuka diagnostik grafis yang mudah digunakan untuk inspeksi visual tanaman?
 
-### 1.3 Pembagian Tugas Tim (4 Mahasiswa)
-1. **Mahasiswa 1**: Segmentasi Daun & Isolasi Lesi Berbasis Ruang Warna.
-2. **Mahasiswa 2**: Ekstraksi Vektor Fitur Dimensi Fraktal & Lakunaritas.
-3. **Mahasiswa 3**: Pembangunan Model Klasifikasi & Validasi Diagnostik.
-4. **Mahasiswa 4**: Antarmuka Grafis (Tkinter GUI), Visualisasi Fitur, & Evaluasi Metrik Klasifikasi.
+### 1.3 Pembagian Tugas Tim Capstone (2 Mahasiswa)
+1. **Aji Kusuma Putra** (NIM: 22/503701/PA/21657): Segmentasi daun dan isolasi lesi bercak daun berbasis ruang warna HSV/Excess Green, serta ekstraksi vektor 5 deskriptor dimensi fraktal kontur dan lakunaritas permukaan. (`sample_data/generate_leaf_dataset.py`, `core/fractal_features.py`).
+2. **Rayhan Haldi Hermawan** (NIM: 24/545406/PA/23176): Pembangunan model classifier machine learning, validasi akurasi diagnostik, Desktop GUI Tkinter, integrasi CLI, visualisasi diagram radar fitur, dan evaluasi metrik (Accuracy, Precision, Recall). (`core/classifier.py`, `core/evaluation.py`, `gui/app.py`, `cli.py`).
 
 ---
 

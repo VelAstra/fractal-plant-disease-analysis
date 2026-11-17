@@ -186,8 +186,8 @@ def build_pdf_report():
         styles["AcademicBody"]
     ))
 
-    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (4 Mahasiswa)", styles["SectionHeading"]))
-    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (4 Mahasiswa)", styles["TableCaption"]))
+    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (2 Mahasiswa)", styles["SectionHeading"]))
+    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (2 Mahasiswa)", styles["TableCaption"]))
 
     t3_data = [
         [
@@ -198,30 +198,18 @@ def build_pdf_report():
         ],
         [
             Paragraph("1", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 1", styles["TableCellLeft"]),
-            Paragraph("Segmentasi daun & isolasi lesi bercak daun berbasis ruang warna HSV.", styles["TableCellLeft"]),
-            Paragraph("sample_data/generate_leaf_dataset.py", styles["TableCellCode"]),
+            Paragraph("Aji Kusuma Putra<br/><font size=7.5 color='#4A5568'>NIM: 22/503701/PA/21657</font>", styles["TableCellLeft"]),
+            Paragraph("Segmentasi daun dan isolasi lesi bercak daun berbasis ruang warna HSV/Excess Green, serta ekstraksi vektor 5 deskriptor dimensi fraktal kontur dan lakunaritas permukaan.", styles["TableCellLeft"]),
+            Paragraph("sample_data/generate_leaf_dataset.py<br/>core/fractal_features.py", styles["TableCellCode"]),
         ],
         [
             Paragraph("2", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 2", styles["TableCellLeft"]),
-            Paragraph("Ekstraksi vektor fitur dimensi fraktal kontur dan lakunaritas permukaan.", styles["TableCellLeft"]),
-            Paragraph("core/fractal_features.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("3", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 3", styles["TableCellLeft"]),
-            Paragraph("Pembangunan model classifier dan validasi akurasi diagnostik.", styles["TableCellLeft"]),
-            Paragraph("core/classifier.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("4", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 4", styles["TableCellLeft"]),
-            Paragraph("Desktop GUI Tkinter, integrasi CLI, visualisasi radar fitur, evaluasi metrik.", styles["TableCellLeft"]),
-            Paragraph("core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
+            Paragraph("Rayhan Haldi Hermawan<br/><font size=7.5 color='#4A5568'>NIM: 24/545406/PA/23176</font>", styles["TableCellLeft"]),
+            Paragraph("Pembangunan model classifier machine learning, validasi akurasi diagnostik, Desktop GUI Tkinter, integrasi CLI, visualisasi diagram radar fitur, dan evaluasi metrik (Accuracy, Precision, Recall).", styles["TableCellLeft"]),
+            Paragraph("core/classifier.py<br/>core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
         ],
     ]
-    t3_table = Table(t3_data, colWidths=[24, 76, 196, 100])
+    t3_table = Table(t3_data, colWidths=[24, 106, 166, 100])
     t3_table.setStyle(get_booktabs_style(len(t3_data)))
     story.append(t3_table)
     story.append(Spacer(1, 0.4 * cm))
